@@ -43,6 +43,8 @@ public:
 
 	virtual int findStraightPath(int layer, const Position3D& start, const Position3D& end, std::vector<Position3D>& paths) = 0;
 
+	virtual int findSmoothPath(int layer, const Position3D& start, const Position3D& end, std::vector<Position3D>& paths) = 0;
+
 	virtual int findRandomPointAroundCircle(int layer, const Position3D& centerPos,
 		std::vector<Position3D>& points, uint32 max_points, float maxRadius) = 0;
 

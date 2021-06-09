@@ -163,6 +163,12 @@ int NavTileHandle::findStraightPath(int layer, const Position3D& start, const Po
 }
 
 //-------------------------------------------------------------------------------------
+int NavTileHandle::findSmoothPath(int layer, const Position3D& start, const Position3D& end, std::vector<Position3D>& paths)
+{
+	return findStraightPath(layer, start, end, paths);
+}
+
+//-------------------------------------------------------------------------------------
 void swap(int& a, int& b) 
 {
 	int c = a;

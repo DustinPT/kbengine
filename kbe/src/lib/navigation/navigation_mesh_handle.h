@@ -37,6 +37,7 @@ namespace KBEngine {
 	{
 	public:
 		static const int MAX_POLYS = 256;
+		static const int MAX_SMOOTH = 2048;
 		static const int NAV_ERROR_NEARESTPOLY = -2;
 
 		static const long RCN_NAVMESH_VERSION = 1;
@@ -53,6 +54,8 @@ namespace KBEngine {
 		virtual ~NavMeshHandle();
 
 		int findStraightPath(int layer, const Position3D& start, const Position3D& end, std::vector<Position3D>& paths);
+
+		int findSmoothPath(int layer, const Position3D& start, const Position3D& end, std::vector<Position3D>& paths);
 
 		int findRandomPointAroundCircle(int layer, const Position3D& centerPos, std::vector<Position3D>& points,
 			uint32 max_points, float maxRadius);

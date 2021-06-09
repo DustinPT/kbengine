@@ -38,7 +38,7 @@ public:
 		yaw_(info.yaw_),
 		roll_(info.roll_),
 		pitch_(info.pitch_),
-		optimized_(true)
+		optimized_(info.optimized_)
 	{
 	}
 
