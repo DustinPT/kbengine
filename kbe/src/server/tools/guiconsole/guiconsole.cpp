@@ -3,6 +3,7 @@
 //
 
 #include "stdafx.h"
+#include <server/serverconfig.h>
 #include "guiconsole.h"
 #include "guiconsoleDlg.h"
 
@@ -66,6 +67,8 @@ int CALLBACK CompareFloatFunc(LPARAM lParam1,LPARAM lParam2,LPARAM lParamSort)
 	else
 		return cs1 > cs2;
 }
+
+ServerConfig g_serverConfig;
 
 // CguiconsoleApp construction
 
